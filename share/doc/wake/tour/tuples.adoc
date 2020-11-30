@@ -68,14 +68,14 @@ Alternatively, we can also bind a variable into scope in a def clause:
 
 ----
 def printCatName cat =
-  def Cat n = cat
+  def Cat n _ = cat
   println n
 ----
 
 Even simpler, we can deconstruct the tuple in the function arguments:
 
 ----
-def printCatName (Cat n) = println n
+def printCatName (Cat n _) = println n
 ----
 
 
