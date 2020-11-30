@@ -276,7 +276,7 @@ worry about the `| getOrElse ...` yet, more on that later.
       def os = job cmdline Nil
       def str = os.getJobStdout | getWhenFail ""
       def body = "#define OS {str}#define WAKE {version}\n"
-      write "{here}/info.h" body # create with mode: rw-r--r--
+      write "{here}/info.h" body # create with mode: rw-rw-r--
     EOF
     wake info_h
 
